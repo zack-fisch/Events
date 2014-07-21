@@ -9,9 +9,9 @@ module EventsHelper
 
 	def image_for(event)
 		if event.image_file_name.blank?
-			image_tag 'placeholder.png', size: "200"
+			image_tag 'placeholder.png', size: "150"
 		else
-			image_tag event.image_file_name, size: "200"
+			image_tag event.image_file_name, size: "150"
 		end
 	end
 end
