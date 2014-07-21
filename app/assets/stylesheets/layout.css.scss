@@ -28,6 +28,11 @@ footer#page-footer {
 	background-color: $secondary-color;
 	padding: 5px;
 	border-top: 5px solid darken($secondary-color, 25%);
+	display: block;
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+
 }
 
 aside#sidebar {
@@ -40,4 +45,30 @@ aside#sidebar {
 	margin-top: 10px;
 }
 }
+
+#options {
+	height: 2rem;
+	width: 9rem;
+	margin-left: 3rem;
+}
+
+#options2 {
+	margin-top: 2rem;
+}
+
+div#form {
+	margin-bottom: 6rem;
+	height: 40rem;
+	width: 25rem;
+	border: 2px solid black;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.center-header {
+	height: 5rem;
+	width: 16rem;
+	margin: 0 auto;
+}
+
 

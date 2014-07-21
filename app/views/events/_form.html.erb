@@ -1,57 +1,59 @@
-<%= form_for(@event) do |f| %>
-	<p>
-		<%= f.label :name%>
-	</p>
+<div id='form'> 
+	<%= form_for(@event) do |f| %>
+		<p>
+			<%= f.label :name%>
+		</p>
 
-	<p>
-		<%= f.text_field :name, autofocus: true %>
-	</p>
+		<p>
+			<%= f.text_field :name, autofocus: true %>
+		</p>
 
-	<p>
-		<%= f.label :description %>
-	</p>
-	<p>
-		<%= f.text_area :description, cols:40, rows:7%>
-	</p>
+		<p>
+			<%= f.label :description %>
+		</p>
+		<p>
+			<%= f.text_area :description, cols:40, rows:7%>
+		</p>
 
-	<p>
-		<%= f.label :location %>
-	</p>
-	<p>
-		<%= f.text_field :location%>
-	</p>
+		<p>
+			<%= f.label :location %>
+		</p>
+		<p>
+			<%= f.text_field :location%>
+		</p>
 
-	<p>
-		<%= f.label :price %>
-	</p>
-	<p>
-		<%= f.number_field :price, cols:40, rows:7%>
-	</p>
+		<p>
+			<%= f.label :price %>
+		</p>
+		<p>
+			<%= f.number_field :price, cols:40, rows:7%>
+		</p>
 
-	<p>
-		<%= f.label :starts_at %>
-	</p>
-	<p>
-		<%= f.datetime_select :starts_at%>
-	</p>
+		<p>
+			<%= f.label :starts_at %>
+		</p>
+		<p>
+			<%= f.datetime_select :starts_at%>
+		</p>
 
-	<p>
-		<%= f.label :image_file_name %>
-	</p>
-	<p>
-		<%= f.text_field :image_file_name, size: 30, 
-		placeholder: "GIF, JPG, or PNG file name" %>
-	</p>
+		<p>
+			<%= f.label :image_file_name %>
+		</p>
+		<p>
+			<%= f.text_field :image_file_name, size: 30, 
+			placeholder: "GIF, JPG, or PNG file name" %>
+		</p>
 
-	<p>
-		<%= f.label :capacity %>
-	</p>
-	<p>
-		<%= f.number_field :capacity%>
-	</p>
+		<p>
+			<%= f.label :capacity %>
+		</p>
+		<p>
+			<%= f.number_field :capacity%>
+		</p>
 
-	<p>
-		<%= f.submit %>
-		<%= link_to 'Cancel', events_path %>
-	</p>
-<% end %>	
+		<p id = 'options2'>
+			<%= f.submit %>
+			<button> <%= link_to 'Cancel', events_path %> </button>
+		</p>
+	<% end %>	
+</div>
